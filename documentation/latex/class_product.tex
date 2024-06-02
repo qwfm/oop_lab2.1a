@@ -1,0 +1,497 @@
+\doxysection{Product Class Reference}
+\hypertarget{class_product}{}\label{class_product}\index{Product@{Product}}
+
+
+Class of a product.  
+
+
+
+
+{\ttfamily \#include $<$Product.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_product_a5a5ef6ffa8509fd900390d471ae8b72f}{Product}} (int id, int \mbox{\hyperlink{class_product_af7d1388754c56cc92c7a3f473d1b7dbc}{supplier\+Id}}, char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca}{brand}}, char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_product_a37d1af74aa2f1af059dde3a3376bd90f}{model}}, char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_product_a8901fcea14da0b78799386ad8ac40441}{price}}, long \mbox{\hyperlink{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78}{prev\+Product\+Address}}, long \mbox{\hyperlink{class_product_a65f620d6abec5f24de55dfe3fd045cfa}{next\+Product\+Address}}, bool state=STATE\+\_\+\+ACTIVE)
+\begin{DoxyCompactList}\small\item\em Standart constructor of a product. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_product_a6cca56300caa309ce1f256a75b7afb32}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some product\textquotesingle{}s id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a461cb6ca6b89550b92076bb363ca7428}{set\+Id}} (int new\+Id)
+\begin{DoxyCompactList}\small\item\em Method sets product\textquotesingle{}s id. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_product_a8e4641cb479ac2689ea5f139d012fea7}{get\+Supplier\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Method returns product\textquotesingle{}s supplier\+ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_af62551f44e2791c3dd61485677e38183}{set\+Supplier\+Id}} (int new\+Supplier\+Id)
+\begin{DoxyCompactList}\small\item\em Method sets product\textquotesingle{}s supplier\+ID. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_product_a9902337edae7e987b3455b9ffbf8c8de}{get\+Brand}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some product\textquotesingle{}s brand. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_ae6de46f4d66c85cf4a54e2e992951fe1}{set\+Brand}} (char \texorpdfstring{$\ast$}{*}new\+Brand)
+\begin{DoxyCompactList}\small\item\em Method sets product\textquotesingle{}s brand. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_product_a37ca27157da150b021bcab5d09233c0c}{get\+Model}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some product\textquotesingle{}s model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a432755f8d6fbbfac4f1c3caed82fb815}{set\+Model}} (char \texorpdfstring{$\ast$}{*}new\+Model)
+\begin{DoxyCompactList}\small\item\em Method sets product\textquotesingle{}s model. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_product_af4582d2f04658daedbb9f2ced76dd5f9}{get\+Price}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some product\textquotesingle{}s price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a24ff4e07577c3048cc474dd2ab15cea1}{set\+Price}} (char \texorpdfstring{$\ast$}{*}new\+Price)
+\begin{DoxyCompactList}\small\item\em Method sets product\textquotesingle{}s price. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_product_a89524c0297a75bf5c6508c42fcc830c9}{get\+Prev\+Product\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Method returns adress in memory of previously added product. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a442fb28b41f09b61bb8e47e0511daea3}{set\+Prev\+Product\+Address}} (long new\+Address)
+\begin{DoxyCompactList}\small\item\em Method returns adress in memory of previously added product. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_product_acdcd314378f1fc566370000b4083b4b4}{get\+Next\+Product\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Method returns adress in memory of product added afterwords ~\newline
+ \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a3be7b96ec50a5bd4886f765ec7a88087}{set\+Next\+Product\+Address}} (long new\+Address)
+\begin{DoxyCompactList}\small\item\em Method sets adress in memory of product added afterwords. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_product_ae05d06223c889af9caf35f89ab3cadd8}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Method returns state of product. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_product_a7140ffa65d98ec58d816fb86b642c7dd}{set\+State}} (bool new\+State)
+\begin{DoxyCompactList}\small\item\em Method sets state of product. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_product_a258ebc43bb0df0d4bef505c8b8495855}{to\+String}} () const
+\begin{DoxyCompactList}\small\item\em Turns something to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_product_a32e802ac149ad39a7a11acd4e804c407}{id}} = -\/1
+\item 
+int \mbox{\hyperlink{class_product_af7d1388754c56cc92c7a3f473d1b7dbc}{supplier\+Id}} = -\/1
+\begin{DoxyCompactList}\small\item\em products\textquotesingle{}s ID \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca}{brand}} = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}
+\begin{DoxyCompactList}\small\item\em product\textquotesingle{}s supplier\+ID \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_product_a37d1af74aa2f1af059dde3a3376bd90f}{model}} = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}
+\begin{DoxyCompactList}\small\item\em product\textquotesingle{}s brand \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_product_a8901fcea14da0b78799386ad8ac40441}{price}} = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}
+\begin{DoxyCompactList}\small\item\em product\textquotesingle{}s model \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78}{prev\+Product\+Address}} = -\/1
+\begin{DoxyCompactList}\small\item\em product\textquotesingle{}s price \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_product_a65f620d6abec5f24de55dfe3fd045cfa}{next\+Product\+Address}} = -\/1
+\begin{DoxyCompactList}\small\item\em adress in memory of previously added product \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_product_ad47406bef57c875a259741f97749cba2}{is\+Removed}} = STATE\+\_\+\+ACTIVE
+\begin{DoxyCompactList}\small\item\em adress in memory of product added afterwords \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of a product. 
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00011}{11}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_product_a5a5ef6ffa8509fd900390d471ae8b72f}\index{Product@{Product}!Product@{Product}}
+\index{Product@{Product}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{Product()}{Product()}}
+{\footnotesize\ttfamily \label{class_product_a5a5ef6ffa8509fd900390d471ae8b72f} 
+Product\+::\+Product (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{int}]{supplier\+Id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{brand}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{model}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{price}{, }\item[{long}]{prev\+Product\+Address}{, }\item[{long}]{next\+Product\+Address}{, }\item[{bool}]{state}{ = {\ttfamily STATE\+\_\+ACTIVE}}\end{DoxyParamCaption})}
+
+
+
+Standart constructor of a product. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ product\textquotesingle{}s id \\
+\hline
+{\em supplier\+Id} & -\/ product\textquotesingle{}s supplier\+ID \\
+\hline
+{\em brand} & -\/ product\textquotesingle{}s brand \\
+\hline
+{\em model} & -\/ product\textquotesingle{}s model \\
+\hline
+{\em price} & -\/ product\textquotesingle{}s price \\
+\hline
+{\em prev\+Product\+Address} & -\/ adress in memory of previously added product \\
+\hline
+{\em next\+Product\+Address} & -\/ adress in memory of product added afterwords \\
+\hline
+{\em state} & -\/ state of product (is product deleted or not) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_product_a9902337edae7e987b3455b9ffbf8c8de}\index{Product@{Product}!getBrand@{getBrand}}
+\index{getBrand@{getBrand}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getBrand()}{getBrand()}}
+{\footnotesize\ttfamily \label{class_product_a9902337edae7e987b3455b9ffbf8c8de} 
+char \texorpdfstring{$\ast$}{*} Product\+::get\+Brand (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some product\textquotesingle{}s brand. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a6cca56300caa309ce1f256a75b7afb32}\index{Product@{Product}!getId@{getId}}
+\index{getId@{getId}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_product_a6cca56300caa309ce1f256a75b7afb32} 
+int Product\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some product\textquotesingle{}s id. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a37ca27157da150b021bcab5d09233c0c}\index{Product@{Product}!getModel@{getModel}}
+\index{getModel@{getModel}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \label{class_product_a37ca27157da150b021bcab5d09233c0c} 
+char \texorpdfstring{$\ast$}{*} Product\+::get\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some product\textquotesingle{}s model. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00044}{44}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_acdcd314378f1fc566370000b4083b4b4}\index{Product@{Product}!getNextProductAddress@{getNextProductAddress}}
+\index{getNextProductAddress@{getNextProductAddress}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getNextProductAddress()}{getNextProductAddress()}}
+{\footnotesize\ttfamily \label{class_product_acdcd314378f1fc566370000b4083b4b4} 
+long Product\+::get\+Next\+Product\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns adress in memory of product added afterwords ~\newline
+ 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00068}{68}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a89524c0297a75bf5c6508c42fcc830c9}\index{Product@{Product}!getPrevProductAddress@{getPrevProductAddress}}
+\index{getPrevProductAddress@{getPrevProductAddress}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getPrevProductAddress()}{getPrevProductAddress()}}
+{\footnotesize\ttfamily \label{class_product_a89524c0297a75bf5c6508c42fcc830c9} 
+long Product\+::get\+Prev\+Product\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns adress in memory of previously added product. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00060}{60}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_af4582d2f04658daedbb9f2ced76dd5f9}\index{Product@{Product}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily \label{class_product_af4582d2f04658daedbb9f2ced76dd5f9} 
+char \texorpdfstring{$\ast$}{*} Product\+::get\+Price (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some product\textquotesingle{}s price. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_ae05d06223c889af9caf35f89ab3cadd8}\index{Product@{Product}!getState@{getState}}
+\index{getState@{getState}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{class_product_ae05d06223c889af9caf35f89ab3cadd8} 
+bool Product\+::get\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns state of product. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a8e4641cb479ac2689ea5f139d012fea7}\index{Product@{Product}!getSupplierId@{getSupplierId}}
+\index{getSupplierId@{getSupplierId}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{getSupplierId()}{getSupplierId()}}
+{\footnotesize\ttfamily \label{class_product_a8e4641cb479ac2689ea5f139d012fea7} 
+int Product\+::get\+Supplier\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns product\textquotesingle{}s supplier\+ID. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_ae6de46f4d66c85cf4a54e2e992951fe1}\index{Product@{Product}!setBrand@{setBrand}}
+\index{setBrand@{setBrand}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setBrand()}{setBrand()}}
+{\footnotesize\ttfamily \label{class_product_ae6de46f4d66c85cf4a54e2e992951fe1} 
+void Product\+::set\+Brand (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{new\+Brand}{}\end{DoxyParamCaption})}
+
+
+
+Method sets product\textquotesingle{}s brand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Brand} & -\/ product\textquotesingle{}s intended brand \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a461cb6ca6b89550b92076bb363ca7428}\index{Product@{Product}!setId@{setId}}
+\index{setId@{setId}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \label{class_product_a461cb6ca6b89550b92076bb363ca7428} 
+void Product\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{new\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Method sets product\textquotesingle{}s id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+ID} & -\/ product\textquotesingle{}s intended ID, chosen by user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a432755f8d6fbbfac4f1c3caed82fb815}\index{Product@{Product}!setModel@{setModel}}
+\index{setModel@{setModel}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily \label{class_product_a432755f8d6fbbfac4f1c3caed82fb815} 
+void Product\+::set\+Model (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{new\+Model}{}\end{DoxyParamCaption})}
+
+
+
+Method sets product\textquotesingle{}s model. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Model} & -\/ product\textquotesingle{}s intended model \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a3be7b96ec50a5bd4886f765ec7a88087}\index{Product@{Product}!setNextProductAddress@{setNextProductAddress}}
+\index{setNextProductAddress@{setNextProductAddress}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setNextProductAddress()}{setNextProductAddress()}}
+{\footnotesize\ttfamily \label{class_product_a3be7b96ec50a5bd4886f765ec7a88087} 
+void Product\+::set\+Next\+Product\+Address (\begin{DoxyParamCaption}\item[{long}]{new\+Address}{}\end{DoxyParamCaption})}
+
+
+
+Method sets adress in memory of product added afterwords. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a442fb28b41f09b61bb8e47e0511daea3}\index{Product@{Product}!setPrevProductAddress@{setPrevProductAddress}}
+\index{setPrevProductAddress@{setPrevProductAddress}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setPrevProductAddress()}{setPrevProductAddress()}}
+{\footnotesize\ttfamily \label{class_product_a442fb28b41f09b61bb8e47e0511daea3} 
+void Product\+::set\+Prev\+Product\+Address (\begin{DoxyParamCaption}\item[{long}]{new\+Address}{}\end{DoxyParamCaption})}
+
+
+
+Method returns adress in memory of previously added product. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00064}{64}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a24ff4e07577c3048cc474dd2ab15cea1}\index{Product@{Product}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily \label{class_product_a24ff4e07577c3048cc474dd2ab15cea1} 
+void Product\+::set\+Price (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{new\+Price}{}\end{DoxyParamCaption})}
+
+
+
+Method sets product\textquotesingle{}s price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Price} & -\/ product\textquotesingle{}s intended price \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a7140ffa65d98ec58d816fb86b642c7dd}\index{Product@{Product}!setState@{setState}}
+\index{setState@{setState}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily \label{class_product_a7140ffa65d98ec58d816fb86b642c7dd} 
+void Product\+::set\+State (\begin{DoxyParamCaption}\item[{bool}]{new\+State}{}\end{DoxyParamCaption})}
+
+
+
+Method sets state of product. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00080}{80}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_af62551f44e2791c3dd61485677e38183}\index{Product@{Product}!setSupplierId@{setSupplierId}}
+\index{setSupplierId@{setSupplierId}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{setSupplierId()}{setSupplierId()}}
+{\footnotesize\ttfamily \label{class_product_af62551f44e2791c3dd61485677e38183} 
+void Product\+::set\+Supplier\+Id (\begin{DoxyParamCaption}\item[{int}]{new\+Supplier\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Method sets product\textquotesingle{}s supplier\+ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+ID} & -\/ product\textquotesingle{}s intended supplier\+ID, chosen by user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+\Hypertarget{class_product_a258ebc43bb0df0d4bef505c8b8495855}\index{Product@{Product}!toString@{toString}}
+\index{toString@{toString}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_product_a258ebc43bb0df0d4bef505c8b8495855} 
+std\+::string Product\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Turns something to string. 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8cpp_source_l00084}{84}} of file \mbox{\hyperlink{_product_8cpp_source}{Product.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca}\index{Product@{Product}!brand@{brand}}
+\index{brand@{brand}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{brand}{brand}}
+{\footnotesize\ttfamily \label{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca} 
+char\texorpdfstring{$\ast$}{*} Product\+::brand = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+product\textquotesingle{}s supplier\+ID 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00112}{112}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_a32e802ac149ad39a7a11acd4e804c407}\index{Product@{Product}!id@{id}}
+\index{id@{id}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_product_a32e802ac149ad39a7a11acd4e804c407} 
+int Product\+::id = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00110}{110}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_ad47406bef57c875a259741f97749cba2}\index{Product@{Product}!isRemoved@{isRemoved}}
+\index{isRemoved@{isRemoved}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{isRemoved}{isRemoved}}
+{\footnotesize\ttfamily \label{class_product_ad47406bef57c875a259741f97749cba2} 
+bool Product\+::is\+Removed = STATE\+\_\+\+ACTIVE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+adress in memory of product added afterwords 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00117}{117}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_a37d1af74aa2f1af059dde3a3376bd90f}\index{Product@{Product}!model@{model}}
+\index{model@{model}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{class_product_a37d1af74aa2f1af059dde3a3376bd90f} 
+char\texorpdfstring{$\ast$}{*} Product\+::model = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+product\textquotesingle{}s brand 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00113}{113}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_a65f620d6abec5f24de55dfe3fd045cfa}\index{Product@{Product}!nextProductAddress@{nextProductAddress}}
+\index{nextProductAddress@{nextProductAddress}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{nextProductAddress}{nextProductAddress}}
+{\footnotesize\ttfamily \label{class_product_a65f620d6abec5f24de55dfe3fd045cfa} 
+long Product\+::next\+Product\+Address = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+adress in memory of previously added product 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00116}{116}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78}\index{Product@{Product}!prevProductAddress@{prevProductAddress}}
+\index{prevProductAddress@{prevProductAddress}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{prevProductAddress}{prevProductAddress}}
+{\footnotesize\ttfamily \label{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78} 
+long Product\+::prev\+Product\+Address = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+product\textquotesingle{}s price 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00115}{115}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_a8901fcea14da0b78799386ad8ac40441}\index{Product@{Product}!price@{price}}
+\index{price@{price}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{price}{price}}
+{\footnotesize\ttfamily \label{class_product_a8901fcea14da0b78799386ad8ac40441} 
+char\texorpdfstring{$\ast$}{*} Product\+::price = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+product\textquotesingle{}s model 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00114}{114}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+\Hypertarget{class_product_af7d1388754c56cc92c7a3f473d1b7dbc}\index{Product@{Product}!supplierId@{supplierId}}
+\index{supplierId@{supplierId}!Product@{Product}}
+\doxysubsubsection{\texorpdfstring{supplierId}{supplierId}}
+{\footnotesize\ttfamily \label{class_product_af7d1388754c56cc92c7a3f473d1b7dbc} 
+int Product\+::supplier\+Id = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+products\textquotesingle{}s ID 
+
+
+
+Definition at line \mbox{\hyperlink{_product_8h_source_l00111}{111}} of file \mbox{\hyperlink{_product_8h_source}{Product.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/Product.\+h\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/Product.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,335 @@
+\doxysection{Supplier Class Reference}
+\hypertarget{class_supplier}{}\label{class_supplier}\index{Supplier@{Supplier}}
+
+
+Class of a supplier.  
+
+
+
+
+{\ttfamily \#include $<$Supplier.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_supplier_a177db36de7994b8386d427e69ed64ded}{Supplier}} (int id, char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_supplier_ad9c85668616b61f1b34778465005875c}{name}}, char \texorpdfstring{$\ast$}{*}address, long \mbox{\hyperlink{class_supplier_ab578d064f95a4de6d93219ba59c74437}{first\+Product\+Address}}, bool state=STATE\+\_\+\+ACTIVE)
+\begin{DoxyCompactList}\small\item\em Standart constructor of a supplier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_supplier_aed7e20f352391e57855576f1149a75ec}{get\+Id}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some supplier\textquotesingle{}s id. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supplier_aa981d35f1caa1f607ad44f3254b91589}{set\+Id}} (int new\+ID)
+\begin{DoxyCompactList}\small\item\em Method sets supplier\textquotesingle{}s id. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_supplier_a0ccdb4890700977d3834ea07b4e56615}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some supplier\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supplier_a6174923f6f819f715cce377d3300700e}{set\+Name}} (char \texorpdfstring{$\ast$}{*}new\+Name)
+\begin{DoxyCompactList}\small\item\em Method sets supplier\textquotesingle{}s name. \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_supplier_a1937135904522654e09ce9c9d264e08b}{get\+Location}} () const
+\begin{DoxyCompactList}\small\item\em Method returns some supplier\textquotesingle{}s adress. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supplier_a2118bf8e25adcc0fa4459dbbf9d9d176}{set\+Location}} (char \texorpdfstring{$\ast$}{*}new\+Location)
+\begin{DoxyCompactList}\small\item\em Method sets supplier\textquotesingle{}s adress. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_supplier_afaa0972b2f1b5dd5a245f1777d01b642}{get\+First\+Product\+Address}} () const
+\begin{DoxyCompactList}\small\item\em Method returns adress in memory of some suplier\textquotesingle{}s first added product. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supplier_a8d97f63d4ca1bf7d02af2879864bcd64}{set\+First\+Product\+Address}} (long new\+Address)
+\begin{DoxyCompactList}\small\item\em Method sets adress in memory of suplier\textquotesingle{}s first added product. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_supplier_ab1afcc77aa7d2e4ca39ce5cc4df325fa}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Method returns state of some suplier (whether he\textquotesingle{}s deleted(true) or not(false)) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_supplier_a4e31639039e90d24830bf6d8f3b118a4}{set\+State}} (bool new\+State)
+\begin{DoxyCompactList}\small\item\em Method sets state of suplier. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_supplier_af6cec11ce45785b8b0f96eff5b8ecc8e}{to\+String}} ()
+\begin{DoxyCompactList}\small\item\em Turns something to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_supplier_af42ebe2321265cecc23724d14354b3f0}{id}} = -\/1
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_supplier_ad9c85668616b61f1b34778465005875c}{name}} = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}
+\begin{DoxyCompactList}\small\item\em supplier\textquotesingle{}s ID \end{DoxyCompactList}\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_supplier_a6babd76796787313137fdb22ecdba99c}{location}} = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}
+\begin{DoxyCompactList}\small\item\em supplier\textquotesingle{}s name \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_supplier_ab578d064f95a4de6d93219ba59c74437}{first\+Product\+Address}} = -\/1
+\begin{DoxyCompactList}\small\item\em supplier\textquotesingle{}s location \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_supplier_a444ab6ab202c1557087631a632c23f4f}{is\+Removed}} = STATE\+\_\+\+ACTIVE
+\begin{DoxyCompactList}\small\item\em supplier\textquotesingle{}s memory address \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of a supplier. 
+
+Definition at line \mbox{\hyperlink{_supplier_8h_source_l00010}{10}} of file \mbox{\hyperlink{_supplier_8h_source}{Supplier.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_supplier_a177db36de7994b8386d427e69ed64ded}\index{Supplier@{Supplier}!Supplier@{Supplier}}
+\index{Supplier@{Supplier}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{Supplier()}{Supplier()}}
+{\footnotesize\ttfamily \label{class_supplier_a177db36de7994b8386d427e69ed64ded} 
+Supplier\+::\+Supplier (\begin{DoxyParamCaption}\item[{int}]{id}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{name}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{address}{, }\item[{long}]{first\+Product\+Address}{, }\item[{bool}]{state}{ = {\ttfamily STATE\+\_\+ACTIVE}}\end{DoxyParamCaption})}
+
+
+
+Standart constructor of a supplier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & -\/ supplier\textquotesingle{}s id \\
+\hline
+{\em name} & -\/ supplier\textquotesingle{}s name \\
+\hline
+{\em address} & -\/ supplier\textquotesingle{}s adress \\
+\hline
+{\em first\+Product\+Address} & -\/ adress in memory of suplier\textquotesingle{}s first added product \\
+\hline
+{\em state} & -\/ state of supplier (is supplier deleted or not) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_supplier_afaa0972b2f1b5dd5a245f1777d01b642}\index{Supplier@{Supplier}!getFirstProductAddress@{getFirstProductAddress}}
+\index{getFirstProductAddress@{getFirstProductAddress}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{getFirstProductAddress()}{getFirstProductAddress()}}
+{\footnotesize\ttfamily \label{class_supplier_afaa0972b2f1b5dd5a245f1777d01b642} 
+long Supplier\+::get\+First\+Product\+Address (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns adress in memory of some suplier\textquotesingle{}s first added product. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_aed7e20f352391e57855576f1149a75ec}\index{Supplier@{Supplier}!getId@{getId}}
+\index{getId@{getId}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \label{class_supplier_aed7e20f352391e57855576f1149a75ec} 
+int Supplier\+::get\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some supplier\textquotesingle{}s id. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_a1937135904522654e09ce9c9d264e08b}\index{Supplier@{Supplier}!getLocation@{getLocation}}
+\index{getLocation@{getLocation}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{getLocation()}{getLocation()}}
+{\footnotesize\ttfamily \label{class_supplier_a1937135904522654e09ce9c9d264e08b} 
+char \texorpdfstring{$\ast$}{*} Supplier\+::get\+Location (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some supplier\textquotesingle{}s adress. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_a0ccdb4890700977d3834ea07b4e56615}\index{Supplier@{Supplier}!getName@{getName}}
+\index{getName@{getName}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_supplier_a0ccdb4890700977d3834ea07b4e56615} 
+char \texorpdfstring{$\ast$}{*} Supplier\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns some supplier\textquotesingle{}s name. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_ab1afcc77aa7d2e4ca39ce5cc4df325fa}\index{Supplier@{Supplier}!getState@{getState}}
+\index{getState@{getState}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{class_supplier_ab1afcc77aa7d2e4ca39ce5cc4df325fa} 
+bool Supplier\+::get\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns state of some suplier (whether he\textquotesingle{}s deleted(true) or not(false)) 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_a8d97f63d4ca1bf7d02af2879864bcd64}\index{Supplier@{Supplier}!setFirstProductAddress@{setFirstProductAddress}}
+\index{setFirstProductAddress@{setFirstProductAddress}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{setFirstProductAddress()}{setFirstProductAddress()}}
+{\footnotesize\ttfamily \label{class_supplier_a8d97f63d4ca1bf7d02af2879864bcd64} 
+void Supplier\+::set\+First\+Product\+Address (\begin{DoxyParamCaption}\item[{long}]{new\+Address}{}\end{DoxyParamCaption})}
+
+
+
+Method sets adress in memory of suplier\textquotesingle{}s first added product. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_aa981d35f1caa1f607ad44f3254b91589}\index{Supplier@{Supplier}!setId@{setId}}
+\index{setId@{setId}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \label{class_supplier_aa981d35f1caa1f607ad44f3254b91589} 
+void Supplier\+::set\+Id (\begin{DoxyParamCaption}\item[{int}]{new\+ID}{}\end{DoxyParamCaption})}
+
+
+
+Method sets supplier\textquotesingle{}s id. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+ID} & -\/ supplier\textquotesingle{}s intended ID, chosen by user \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_a2118bf8e25adcc0fa4459dbbf9d9d176}\index{Supplier@{Supplier}!setLocation@{setLocation}}
+\index{setLocation@{setLocation}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{setLocation()}{setLocation()}}
+{\footnotesize\ttfamily \label{class_supplier_a2118bf8e25adcc0fa4459dbbf9d9d176} 
+void Supplier\+::set\+Location (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{new\+Location}{}\end{DoxyParamCaption})}
+
+
+
+Method sets supplier\textquotesingle{}s adress. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Location} & -\/ supplier\textquotesingle{}s intended location \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_a6174923f6f819f715cce377d3300700e}\index{Supplier@{Supplier}!setName@{setName}}
+\index{setName@{setName}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily \label{class_supplier_a6174923f6f819f715cce377d3300700e} 
+void Supplier\+::set\+Name (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{new\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Method sets supplier\textquotesingle{}s name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Name} & -\/ supplier\textquotesingle{}s intended name \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_a4e31639039e90d24830bf6d8f3b118a4}\index{Supplier@{Supplier}!setState@{setState}}
+\index{setState@{setState}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily \label{class_supplier_a4e31639039e90d24830bf6d8f3b118a4} 
+void Supplier\+::set\+State (\begin{DoxyParamCaption}\item[{bool}]{new\+State}{}\end{DoxyParamCaption})}
+
+
+
+Method sets state of suplier. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00051}{51}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+\Hypertarget{class_supplier_af6cec11ce45785b8b0f96eff5b8ecc8e}\index{Supplier@{Supplier}!toString@{toString}}
+\index{toString@{toString}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily \label{class_supplier_af6cec11ce45785b8b0f96eff5b8ecc8e} 
+std\+::string Supplier\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Turns something to string. 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8cpp_source_l00055}{55}} of file \mbox{\hyperlink{_supplier_8cpp_source}{Supplier.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_supplier_ab578d064f95a4de6d93219ba59c74437}\index{Supplier@{Supplier}!firstProductAddress@{firstProductAddress}}
+\index{firstProductAddress@{firstProductAddress}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{firstProductAddress}{firstProductAddress}}
+{\footnotesize\ttfamily \label{class_supplier_ab578d064f95a4de6d93219ba59c74437} 
+long Supplier\+::first\+Product\+Address = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+supplier\textquotesingle{}s location 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8h_source_l00079}{79}} of file \mbox{\hyperlink{_supplier_8h_source}{Supplier.\+h}}.
+
+\Hypertarget{class_supplier_af42ebe2321265cecc23724d14354b3f0}\index{Supplier@{Supplier}!id@{id}}
+\index{id@{id}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{class_supplier_af42ebe2321265cecc23724d14354b3f0} 
+int Supplier\+::id = -\/1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8h_source_l00076}{76}} of file \mbox{\hyperlink{_supplier_8h_source}{Supplier.\+h}}.
+
+\Hypertarget{class_supplier_a444ab6ab202c1557087631a632c23f4f}\index{Supplier@{Supplier}!isRemoved@{isRemoved}}
+\index{isRemoved@{isRemoved}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{isRemoved}{isRemoved}}
+{\footnotesize\ttfamily \label{class_supplier_a444ab6ab202c1557087631a632c23f4f} 
+bool Supplier\+::is\+Removed = STATE\+\_\+\+ACTIVE\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+supplier\textquotesingle{}s memory address 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8h_source_l00080}{80}} of file \mbox{\hyperlink{_supplier_8h_source}{Supplier.\+h}}.
+
+\Hypertarget{class_supplier_a6babd76796787313137fdb22ecdba99c}\index{Supplier@{Supplier}!location@{location}}
+\index{location@{location}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily \label{class_supplier_a6babd76796787313137fdb22ecdba99c} 
+char\texorpdfstring{$\ast$}{*} Supplier\+::location = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+supplier\textquotesingle{}s name 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8h_source_l00078}{78}} of file \mbox{\hyperlink{_supplier_8h_source}{Supplier.\+h}}.
+
+\Hypertarget{class_supplier_ad9c85668616b61f1b34778465005875c}\index{Supplier@{Supplier}!name@{name}}
+\index{name@{name}!Supplier@{Supplier}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_supplier_ad9c85668616b61f1b34778465005875c} 
+char\texorpdfstring{$\ast$}{*} Supplier\+::name = new char\mbox{[}STRING\+\_\+\+SIZE\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+supplier\textquotesingle{}s ID 
+
+
+
+Definition at line \mbox{\hyperlink{_supplier_8h_source_l00077}{77}} of file \mbox{\hyperlink{_supplier_8h_source}{Supplier.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/Supplier.\+h\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/Supplier.\+cpp\end{DoxyCompactItemize}

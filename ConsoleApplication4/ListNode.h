@@ -2,13 +2,14 @@
 #define DBO_LAB1_LISTNODE_H
 
 #include <iostream>
-
+/*!
+    \brief Structure of a ListNode
+*/
 struct ListNode {
-    int id = -1;
-    long address = -1;
-    ListNode* next = nullptr;
+    /*! \brief id of a listNode  */ int id = -1;
+    /*! \brief adress of a listNode in memory  */ long address = -1;
+    /*! \brief pointer to the next listNode  */ ListNode* next = nullptr;
 };
-
 
 long getAddress(int id, ListNode* head);
 

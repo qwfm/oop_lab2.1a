@@ -1,0 +1,109 @@
+\doxysection{Utilities.\+cpp}
+\hypertarget{_utilities_8cpp_source}{}\label{_utilities_8cpp_source}\index{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Utilities.cpp@{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Utilities.cpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}Utilities.h"{}}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00003}00003\ \textcolor{keywordtype}{void}\ writeProduct(FILE*\ file,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_product}{Product}}\&\ product)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00005}00005\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ product.\mbox{\hyperlink{class_product_a6cca56300caa309ce1f256a75b7afb32}{getId}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00006}00006\ \ \ \ \ \textcolor{keywordtype}{int}\ supplierId\ =\ product.\mbox{\hyperlink{class_product_a8e4641cb479ac2689ea5f139d012fea7}{getSupplierId}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00007}00007\ \ \ \ \ \textcolor{keywordtype}{char}*\ brand\ =\ product.\mbox{\hyperlink{class_product_a9902337edae7e987b3455b9ffbf8c8de}{getBrand}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00008}00008\ \ \ \ \ \textcolor{keywordtype}{char}*\ model\ =\ product.\mbox{\hyperlink{class_product_a37ca27157da150b021bcab5d09233c0c}{getModel}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00009}00009\ \ \ \ \ \textcolor{keywordtype}{char}*\ price\ =\ product.\mbox{\hyperlink{class_product_af4582d2f04658daedbb9f2ced76dd5f9}{getPrice}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00010}00010\ \ \ \ \ \textcolor{keywordtype}{long}\ prevProductAddress\ =\ product.\mbox{\hyperlink{class_product_a89524c0297a75bf5c6508c42fcc830c9}{getPrevProductAddress}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00011}00011\ \ \ \ \ \textcolor{keywordtype}{long}\ nextProductAddress\ =\ product.\mbox{\hyperlink{class_product_acdcd314378f1fc566370000b4083b4b4}{getNextProductAddress}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ state\ =\ product.\mbox{\hyperlink{class_product_ae05d06223c889af9caf35f89ab3cadd8}{getState}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00014}00014\ \ \ \ \ fwrite(\&\textcolor{keywordtype}{id},\ INT\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00015}00015\ \ \ \ \ fwrite(\&supplierId,\ INT\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00016}00016\ \ \ \ \ fwrite(brand,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00017}00017\ \ \ \ \ fwrite(model,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00018}00018\ \ \ \ \ fwrite(price,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00019}00019\ \ \ \ \ fwrite(\&prevProductAddress,\ LONG\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00020}00020\ \ \ \ \ fwrite(\&nextProductAddress,\ LONG\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00021}00021\ \ \ \ \ fwrite(\&state,\ BOOL\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00022}00022\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00024}00024\ \textcolor{keywordtype}{void}\ writeProduct(FILE*\ file,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_product}{Product}}\&\ product,\ \textcolor{keywordtype}{long}\ address)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00025}00025\ \ \ \ \ fseek(file,\ address,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00026}00026\ \ \ \ \ writeProduct(file,\ product);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00029}00029\ \mbox{\hyperlink{class_product}{Product}}\ readProduct(FILE*\ file)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{int}\ supplierId;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordtype}{char}*\ brand\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{char}*\ model\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{char}*\ price\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00035}00035\ \ \ \ \ \textcolor{keywordtype}{long}\ prevProductAddress;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{long}\ nextProductAddress;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ state;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00040}00040\ \ \ \ \ fread(\&\textcolor{keywordtype}{id},\ INT\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00041}00041\ \ \ \ \ fread(\&supplierId,\ INT\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00042}00042\ \ \ \ \ fread(brand,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00043}00043\ \ \ \ \ fread(model,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00044}00044\ \ \ \ \ fread(price,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00045}00045\ \ \ \ \ fread(\&prevProductAddress,\ LONG\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00046}00046\ \ \ \ \ fread(\&nextProductAddress,\ LONG\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00047}00047\ \ \ \ \ fread(\&state,\ BOOL\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ id,\ supplierId,\ brand,\ model,\ price,\ prevProductAddress,\ nextProductAddress\ \};}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00050}00050\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00052}00052\ \mbox{\hyperlink{class_product}{Product}}\ readProduct(FILE*\ file,\ \textcolor{keywordtype}{long}\ address)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00053}00053\ \ \ \ \ fseek(file,\ address,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{return}\ readProduct(file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00057}00057\ \textcolor{keywordtype}{void}\ writeSupplier(FILE*\ file,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_supplier}{Supplier}}\&\ supplier)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ supplier.\mbox{\hyperlink{class_supplier_aed7e20f352391e57855576f1149a75ec}{getId}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordtype}{char}*\ name\ =\ supplier.\mbox{\hyperlink{class_supplier_a0ccdb4890700977d3834ea07b4e56615}{getName}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordtype}{char}*\ location\ =\ supplier.\mbox{\hyperlink{class_supplier_a1937135904522654e09ce9c9d264e08b}{getLocation}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordtype}{long}\ firstProductAddress\ =\ supplier.\mbox{\hyperlink{class_supplier_afaa0972b2f1b5dd5a245f1777d01b642}{getFirstProductAddress}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ state\ =\ supplier.\mbox{\hyperlink{class_supplier_ab1afcc77aa7d2e4ca39ce5cc4df325fa}{getState}}();}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00064}00064\ \ \ \ \ fwrite(\&\textcolor{keywordtype}{id},\ INT\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00065}00065\ \ \ \ \ fwrite(name,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00066}00066\ \ \ \ \ fwrite(location,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00067}00067\ \ \ \ \ fwrite(\&firstProductAddress,\ LONG\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00068}00068\ \ \ \ \ fwrite(\&state,\ BOOL\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00070}00070\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00072}00072\ \textcolor{keywordtype}{void}\ writeSupplier(FILE*\ file,\ \mbox{\hyperlink{class_supplier}{Supplier}}\ supplier,\ \textcolor{keywordtype}{long}\ address)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00073}00073\ \ \ \ \ fseek(file,\ address,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00074}00074\ \ \ \ \ writeSupplier(file,\ supplier);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00075}00075\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00077}00077\ \mbox{\hyperlink{class_supplier}{Supplier}}\ readSupplier(FILE*\ file)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{keywordtype}{int}\ id;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{char}*\ name\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{char}*\ location\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordtype}{long}\ firstProductAddress;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keywordtype}{bool}\ state;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00084}00084\ \ \ \ \ fread(\&\textcolor{keywordtype}{id},\ INT\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00085}00085\ \ \ \ \ fread(name,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00086}00086\ \ \ \ \ fread(location,\ CHAR\_SIZE,\ STRING\_SIZE,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00087}00087\ \ \ \ \ fread(\&firstProductAddress,\ LONG\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00088}00088\ \ \ \ \ fread(\&state,\ BOOL\_SIZE,\ 1,\ file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{return}\ \{\ id,\ name,\ location,\ firstProductAddress,\ state\ \};}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00091}00091\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00093}00093\ \mbox{\hyperlink{class_supplier}{Supplier}}\ readSupplier(FILE*\ file,\ \textcolor{keywordtype}{long}\ address)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00094}00094\ \ \ \ \ fseek(file,\ address,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00095}00095\ \ \ \ \ \textcolor{keywordflow}{return}\ readSupplier(file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00096}00096\ \}}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00098}00098\ \textcolor{keywordtype}{bool}\ isFileEmpty(FILE*\ file)\ \{}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00099}00099\ \ \ \ \ fseek(file,\ 0,\ SEEK\_END);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{keywordtype}{long}\ address\ =\ ftell(file);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00101}00101\ \ \ \ \ fseek(file,\ 0,\ SEEK\_SET);}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00102}00102\ \ \ \ \ \textcolor{keywordflow}{return}\ address\ ==\ 0;}
+\DoxyCodeLine{\Hypertarget{_utilities_8cpp_source_l00103}00103\ \}}
+
+\end{DoxyCode}

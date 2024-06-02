@@ -1,0 +1,67 @@
+\doxysection{Functions.\+h}
+\hypertarget{_functions_8h_source}{}\label{_functions_8h_source}\index{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Functions.h@{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Functions.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ DBO\_LAB1\_FUNCTIONS\_H}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ DBO\_LAB1\_FUNCTIONS\_H}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}Utilities.h"{}}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}Supplier.h"{}}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}Product.h"{}}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}ListNode.h"{}}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}Queue.h"{}}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}Menu.h"{}}}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00011}00011\ \textcolor{keywordtype}{long}\ getSupplierAddress(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00013}00013\ \mbox{\hyperlink{class_supplier}{Supplier}}\ getSupplier(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00015}00015\ \textcolor{keywordtype}{void}\ getAllSuppliers();}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00017}00017\ \textcolor{keywordtype}{void}\ countSuppliers();}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00019}00019\ \textcolor{keywordtype}{long}\ getProductAddress(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00021}00021\ \mbox{\hyperlink{class_product}{Product}}\ getProduct(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00023}00023\ \textcolor{keywordtype}{void}\ getAllProducts();}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00025}00025\ \textcolor{keywordtype}{void}\ countProducts();}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00027}00027\ \textcolor{keywordtype}{int}\ countProductsOfSupplier(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00029}00029\ \textcolor{keywordtype}{bool}\ removeSupplier(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00031}00031\ \textcolor{keywordtype}{bool}\ removeProduct(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00033}00033\ \textcolor{keywordtype}{bool}\ insertSupplier(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_supplier}{Supplier}}\&\ newSupplier);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00035}00035\ \textcolor{keywordtype}{bool}\ insertProduct(\mbox{\hyperlink{class_product}{Product}}\&\ newProduct);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00037}00037\ \textcolor{keywordtype}{bool}\ updateSupplier(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_supplier}{Supplier}}\&\ newSupplier);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00039}00039\ \textcolor{keywordtype}{bool}\ updateProduct(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_product}{Product}}\&\ newProduct);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00041}00041\ \textcolor{keywordtype}{bool}\ checkSupplierId(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00043}00043\ \textcolor{keywordtype}{bool}\ checkProductId(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00045}00045\ \textcolor{keywordtype}{void}\ loadIndex(\textcolor{keywordtype}{char}*\ filePath,\ \mbox{\hyperlink{struct_list_node}{ListNode}}**\ head);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00047}00047\ \textcolor{keywordtype}{void}\ loadGarbage(\textcolor{keywordtype}{char}*\ filePath,\ \mbox{\hyperlink{struct_queue}{Queue}}**\ garbage);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00049}00049\ \textcolor{keywordtype}{bool}\ checkSupplierGarbageId(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00051}00051\ \textcolor{keywordtype}{bool}\ checkProductGarbageId(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00053}00053\ \textcolor{keywordtype}{void}\ prepareFiles(\textcolor{keywordtype}{char}*\ suppliersPath,}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{char}*\ productsPath,}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00055}00055\ \ \ \ \ \textcolor{keywordtype}{char}*\ suppliersIndexPath,}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{char}*\ productsIndexPath,}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{char}*\ suppliersGarbagePath,}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{char}*\ productsGarbagePath);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00060}00060\ \textcolor{keywordtype}{void}\ close(\textcolor{keywordtype}{char}*\ suppliersIndexPath,\ \textcolor{keywordtype}{char}*\ productsIndexPath,\ \textcolor{keywordtype}{char}*\ suppliersGarbagePath,\ \textcolor{keywordtype}{char}*\ productsGarbagePath);}
+\DoxyCodeLine{\Hypertarget{_functions_8h_source_l00061}00061\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,60 @@
+\doxysection{List\+Node Struct Reference}
+\hypertarget{struct_list_node}{}\label{struct_list_node}\index{ListNode@{ListNode}}
+
+
+Collaboration diagram for List\+Node\+:
+% FIG 0
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{struct_list_node_adf33ed45529a35d8644feef0345c5f2b}{id}} = -\/1
+\item 
+long \mbox{\hyperlink{struct_list_node_a3f7e6ffc4a17798b02db88512780a62e}{address}} = -\/1
+\item 
+\mbox{\hyperlink{struct_list_node}{List\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_list_node_ad78b392c2ddc25c3243d0c2f30692fb1}{next}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_list_node_8h_source_l00006}{6}} of file \mbox{\hyperlink{_list_node_8h_source}{List\+Node.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_list_node_a3f7e6ffc4a17798b02db88512780a62e}\index{ListNode@{ListNode}!address@{address}}
+\index{address@{address}!ListNode@{ListNode}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily \label{struct_list_node_a3f7e6ffc4a17798b02db88512780a62e} 
+long List\+Node\+::address = -\/1}
+
+
+
+Definition at line \mbox{\hyperlink{_list_node_8h_source_l00008}{8}} of file \mbox{\hyperlink{_list_node_8h_source}{List\+Node.\+h}}.
+
+\Hypertarget{struct_list_node_adf33ed45529a35d8644feef0345c5f2b}\index{ListNode@{ListNode}!id@{id}}
+\index{id@{id}!ListNode@{ListNode}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily \label{struct_list_node_adf33ed45529a35d8644feef0345c5f2b} 
+int List\+Node\+::id = -\/1}
+
+
+
+Definition at line \mbox{\hyperlink{_list_node_8h_source_l00007}{7}} of file \mbox{\hyperlink{_list_node_8h_source}{List\+Node.\+h}}.
+
+\Hypertarget{struct_list_node_ad78b392c2ddc25c3243d0c2f30692fb1}\index{ListNode@{ListNode}!next@{next}}
+\index{next@{next}!ListNode@{ListNode}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{struct_list_node_ad78b392c2ddc25c3243d0c2f30692fb1} 
+\mbox{\hyperlink{struct_list_node}{List\+Node}}\texorpdfstring{$\ast$}{*} List\+Node\+::next = nullptr}
+
+
+
+Definition at line \mbox{\hyperlink{_list_node_8h_source_l00009}{9}} of file \mbox{\hyperlink{_list_node_8h_source}{List\+Node.\+h}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/List\+Node.\+h\end{DoxyCompactItemize}

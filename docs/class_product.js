@@ -1,0 +1,28 @@
+var class_product =
+[
+    [ "Product", "class_product.html#a5a5ef6ffa8509fd900390d471ae8b72f", null ],
+    [ "getBrand", "class_product.html#a9902337edae7e987b3455b9ffbf8c8de", null ],
+    [ "getId", "class_product.html#a6cca56300caa309ce1f256a75b7afb32", null ],
+    [ "getModel", "class_product.html#a37ca27157da150b021bcab5d09233c0c", null ],
+    [ "getNextProductAddress", "class_product.html#acdcd314378f1fc566370000b4083b4b4", null ],
+    [ "getPrevProductAddress", "class_product.html#a89524c0297a75bf5c6508c42fcc830c9", null ],
+    [ "getPrice", "class_product.html#af4582d2f04658daedbb9f2ced76dd5f9", null ],
+    [ "getState", "class_product.html#ae05d06223c889af9caf35f89ab3cadd8", null ],
+    [ "getSupplierId", "class_product.html#a8e4641cb479ac2689ea5f139d012fea7", null ],
+    [ "setBrand", "class_product.html#ae6de46f4d66c85cf4a54e2e992951fe1", null ],
+    [ "setId", "class_product.html#a461cb6ca6b89550b92076bb363ca7428", null ],
+    [ "setModel", "class_product.html#a432755f8d6fbbfac4f1c3caed82fb815", null ],
+    [ "setNextProductAddress", "class_product.html#a3be7b96ec50a5bd4886f765ec7a88087", null ],
+    [ "setPrevProductAddress", "class_product.html#a442fb28b41f09b61bb8e47e0511daea3", null ],
+    [ "setPrice", "class_product.html#a24ff4e07577c3048cc474dd2ab15cea1", null ],
+    [ "setState", "class_product.html#a7140ffa65d98ec58d816fb86b642c7dd", null ],
+    [ "setSupplierId", "class_product.html#af62551f44e2791c3dd61485677e38183", null ],
+    [ "toString", "class_product.html#a258ebc43bb0df0d4bef505c8b8495855", null ],
+    [ "brand", "class_product.html#aa6f1a902dd84b9ca9d6a4a9221da0bca", null ],
+    [ "isRemoved", "class_product.html#ad47406bef57c875a259741f97749cba2", null ],
+    [ "model", "class_product.html#a37d1af74aa2f1af059dde3a3376bd90f", null ],
+    [ "nextProductAddress", "class_product.html#a65f620d6abec5f24de55dfe3fd045cfa", null ],
+    [ "prevProductAddress", "class_product.html#a9d2dbc0b4d88b04319d84bfd2261fe78", null ],
+    [ "price", "class_product.html#a8901fcea14da0b78799386ad8ac40441", null ],
+    [ "supplierId", "class_product.html#af7d1388754c56cc92c7a3f473d1b7dbc", null ]
+];

@@ -1,0 +1,136 @@
+\doxysection{Queue Struct Reference}
+\hypertarget{struct_queue}{}\label{struct_queue}\index{Queue@{Queue}}
+
+
+Structure of a queue.  
+
+
+
+
+{\ttfamily \#include $<$Queue.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{struct_queue_a7614672eed4a720bf0d78d94002bd022}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Method returns 0 when queue is empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_queue_af315d7370fbf87b47e1559cd909551b6}{push}} (long address)
+\begin{DoxyCompactList}\small\item\em Method to push queue\+Node with a specific address from a queue. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{struct_queue_a64a2b12294ad7bca218b016065881967}{remove\+Address}} (long address)
+\begin{DoxyCompactList}\small\item\em Method to remove queue\+Node with a specific address from a queue. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{struct_queue_a692344ca316ae08583957ffcd6e98c8e}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Method to pop queue\+Node\textquotesingle{}s head. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_queue_node}{Queue\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_queue_af66c00417110000f03d37b86c91134a9}{head}} = nullptr
+\begin{DoxyCompactList}\small\item\em queue\textquotesingle{}s last added element ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_queue_node}{Queue\+Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{struct_queue_ab9a01482ce58a69f78ac3de9e472834d}{tail}} = nullptr
+\begin{DoxyCompactList}\small\item\em queue\textquotesingle{}s first added element ~\newline
+ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure of a queue. 
+
+Definition at line \mbox{\hyperlink{_queue_8h_source_l00017}{17}} of file \mbox{\hyperlink{_queue_8h_source}{Queue.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_queue_a7614672eed4a720bf0d78d94002bd022}\index{Queue@{Queue}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{struct_queue_a7614672eed4a720bf0d78d94002bd022} 
+bool Queue\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Method returns 0 when queue is empty. 
+
+
+
+Definition at line \mbox{\hyperlink{_queue_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{_queue_8cpp_source}{Queue.\+cpp}}.
+
+\Hypertarget{struct_queue_a692344ca316ae08583957ffcd6e98c8e}\index{Queue@{Queue}!pop@{pop}}
+\index{pop@{pop}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{struct_queue_a692344ca316ae08583957ffcd6e98c8e} 
+long Queue\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Method to pop queue\+Node\textquotesingle{}s head. 
+
+
+
+Definition at line \mbox{\hyperlink{_queue_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{_queue_8cpp_source}{Queue.\+cpp}}.
+
+\Hypertarget{struct_queue_af315d7370fbf87b47e1559cd909551b6}\index{Queue@{Queue}!push@{push}}
+\index{push@{push}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{struct_queue_af315d7370fbf87b47e1559cd909551b6} 
+void Queue\+::push (\begin{DoxyParamCaption}\item[{long}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Method to push queue\+Node with a specific address from a queue. 
+
+
+
+Definition at line \mbox{\hyperlink{_queue_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{_queue_8cpp_source}{Queue.\+cpp}}.
+
+\Hypertarget{struct_queue_a64a2b12294ad7bca218b016065881967}\index{Queue@{Queue}!removeAddress@{removeAddress}}
+\index{removeAddress@{removeAddress}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{removeAddress()}{removeAddress()}}
+{\footnotesize\ttfamily \label{struct_queue_a64a2b12294ad7bca218b016065881967} 
+long Queue\+::remove\+Address (\begin{DoxyParamCaption}\item[{long}]{address}{}\end{DoxyParamCaption})}
+
+
+
+Method to remove queue\+Node with a specific address from a queue. 
+
+
+
+Definition at line \mbox{\hyperlink{_queue_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{_queue_8cpp_source}{Queue.\+cpp}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_queue_af66c00417110000f03d37b86c91134a9}\index{Queue@{Queue}!head@{head}}
+\index{head@{head}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{struct_queue_af66c00417110000f03d37b86c91134a9} 
+\mbox{\hyperlink{struct_queue_node}{Queue\+Node}}\texorpdfstring{$\ast$}{*} Queue\+::head = nullptr}
+
+
+
+queue\textquotesingle{}s last added element ~\newline
+ 
+
+
+
+Definition at line \mbox{\hyperlink{_queue_8h_source_l00018}{18}} of file \mbox{\hyperlink{_queue_8h_source}{Queue.\+h}}.
+
+\Hypertarget{struct_queue_ab9a01482ce58a69f78ac3de9e472834d}\index{Queue@{Queue}!tail@{tail}}
+\index{tail@{tail}!Queue@{Queue}}
+\doxysubsubsection{\texorpdfstring{tail}{tail}}
+{\footnotesize\ttfamily \label{struct_queue_ab9a01482ce58a69f78ac3de9e472834d} 
+\mbox{\hyperlink{struct_queue_node}{Queue\+Node}}\texorpdfstring{$\ast$}{*} Queue\+::tail = nullptr}
+
+
+
+queue\textquotesingle{}s first added element ~\newline
+ 
+
+
+
+Definition at line \mbox{\hyperlink{_queue_8h_source_l00019}{19}} of file \mbox{\hyperlink{_queue_8h_source}{Queue.\+h}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/Queue.\+h\item 
+C\+:/\+Users/chasl/\+One\+Drive/\+Desktop/Лаби/\+Console\+Application4/\+Console\+Application4/Queue.\+cpp\end{DoxyCompactItemize}

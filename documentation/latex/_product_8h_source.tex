@@ -1,0 +1,56 @@
+\doxysection{Product.\+h}
+\hypertarget{_product_8h_source}{}\label{_product_8h_source}\index{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Product.h@{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Product.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ DBO\_LAB1\_BOOK\_H}}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ DBO\_LAB1\_BOOK\_H}}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}Constants.h"{}}}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00011}\mbox{\hyperlink{class_product}{00011}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_product}{Product}}}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00013}00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{class_product}{Product}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00026}00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_product_af7d1388754c56cc92c7a3f473d1b7dbc}{supplierId}},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca}{brand}},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_a37d1af74aa2f1af059dde3a3376bd90f}{model}},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_a8901fcea14da0b78799386ad8ac40441}{price}},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78}{prevProductAddress}},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_product_a65f620d6abec5f24de55dfe3fd045cfa}{nextProductAddress}},}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00032}00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ state\ =\ STATE\_ACTIVE);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{class_product}{Product}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_product_a6cca56300caa309ce1f256a75b7afb32}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_a461cb6ca6b89550b92076bb363ca7428}{setId}}(\textcolor{keywordtype}{int}\ newId);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00047}00047\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_product_a8e4641cb479ac2689ea5f139d012fea7}{getSupplierId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00052}00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_af62551f44e2791c3dd61485677e38183}{setSupplierId}}(\textcolor{keywordtype}{int}\ newSupplierId);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_a9902337edae7e987b3455b9ffbf8c8de}{getBrand}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00061}00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_ae6de46f4d66c85cf4a54e2e992951fe1}{setBrand}}(\textcolor{keywordtype}{char}*\ newBrand);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00065}00065\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_a37ca27157da150b021bcab5d09233c0c}{getModel}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00070}00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_a432755f8d6fbbfac4f1c3caed82fb815}{setModel}}(\textcolor{keywordtype}{char}*\ newModel);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_af4582d2f04658daedbb9f2ced76dd5f9}{getPrice}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00079}00079\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_a24ff4e07577c3048cc474dd2ab15cea1}{setPrice}}(\textcolor{keywordtype}{char}*\ newPrice);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00083}00083\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_product_a89524c0297a75bf5c6508c42fcc830c9}{getPrevProductAddress}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00087}00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_a442fb28b41f09b61bb8e47e0511daea3}{setPrevProductAddress}}(\textcolor{keywordtype}{long}\ newAddress);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00091}00091\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_product_acdcd314378f1fc566370000b4083b4b4}{getNextProductAddress}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00095}00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_a3be7b96ec50a5bd4886f765ec7a88087}{setNextProductAddress}}(\textcolor{keywordtype}{long}\ newAddress);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00099}00099\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_product_ae05d06223c889af9caf35f89ab3cadd8}{getState}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00103}00103\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_product_a7140ffa65d98ec58d816fb86b642c7dd}{setState}}(\textcolor{keywordtype}{bool}\ newState);}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00107}00107\ \ \ \ \ std::string\ \mbox{\hyperlink{class_product_a258ebc43bb0df0d4bef505c8b8495855}{toString}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00109}00109\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00110}00110\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ -\/1;\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00111}\mbox{\hyperlink{class_product_af7d1388754c56cc92c7a3f473d1b7dbc}{00111}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_product_af7d1388754c56cc92c7a3f473d1b7dbc}{supplierId}}\ =\ -\/1;\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00112}\mbox{\hyperlink{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca}{00112}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_aa6f1a902dd84b9ca9d6a4a9221da0bca}{brand}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];\ \ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00113}\mbox{\hyperlink{class_product_a37d1af74aa2f1af059dde3a3376bd90f}{00113}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_a37d1af74aa2f1af059dde3a3376bd90f}{model}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];\ \ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00114}\mbox{\hyperlink{class_product_a8901fcea14da0b78799386ad8ac40441}{00114}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_product_a8901fcea14da0b78799386ad8ac40441}{price}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];\ \ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00115}\mbox{\hyperlink{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78}{00115}}\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_product_a9d2dbc0b4d88b04319d84bfd2261fe78}{prevProductAddress}}\ =\ -\/1;\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00116}\mbox{\hyperlink{class_product_a65f620d6abec5f24de55dfe3fd045cfa}{00116}}\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_product_a65f620d6abec5f24de55dfe3fd045cfa}{nextProductAddress}}\ =\ -\/1;\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00117}\mbox{\hyperlink{class_product_ad47406bef57c875a259741f97749cba2}{00117}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_product_ad47406bef57c875a259741f97749cba2}{isRemoved}}\ =\ STATE\_ACTIVE;\ \ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00118}00118\ \};}
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_product_8h_source_l00120}00120\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

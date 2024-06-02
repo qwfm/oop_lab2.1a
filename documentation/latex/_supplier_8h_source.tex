@@ -1,0 +1,42 @@
+\doxysection{Supplier.\+h}
+\hypertarget{_supplier_8h_source}{}\label{_supplier_8h_source}\index{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Supplier.h@{C:/Users/chasl/OneDrive/Desktop/Лаби/ConsoleApplication4/ConsoleApplication4/Supplier.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ DBO\_LAB1\_PUBLISHER\_H}}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ DBO\_LAB1\_PUBLISHER\_H}}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}Constants.h"{}}}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00010}\mbox{\hyperlink{class_supplier}{00010}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_supplier}{Supplier}}}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00012}00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{class_supplier}{Supplier}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id},}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_supplier_ad9c85668616b61f1b34778465005875c}{name}},}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00023}00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}*\ address,}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00024}00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_supplier_ab578d064f95a4de6d93219ba59c74437}{firstProductAddress}},}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ state\ =\ STATE\_ACTIVE);}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00026}00026\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_supplier}{Supplier}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_supplier_aed7e20f352391e57855576f1149a75ec}{getId}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_aa981d35f1caa1f607ad44f3254b91589}{setId}}(\textcolor{keywordtype}{int}\ newID);}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00040}00040\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_supplier_a0ccdb4890700977d3834ea07b4e56615}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_a6174923f6f819f715cce377d3300700e}{setName}}(\textcolor{keywordtype}{char}*\ newName);}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00049}00049\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_supplier_a1937135904522654e09ce9c9d264e08b}{getLocation}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00054}00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_a2118bf8e25adcc0fa4459dbbf9d9d176}{setLocation}}(\textcolor{keywordtype}{char}*\ newLocation);}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_supplier_afaa0972b2f1b5dd5a245f1777d01b642}{getFirstProductAddress}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_a8d97f63d4ca1bf7d02af2879864bcd64}{setFirstProductAddress}}(\textcolor{keywordtype}{long}\ newAddress);}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00066}00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_supplier_ab1afcc77aa7d2e4ca39ce5cc4df325fa}{getState}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00070}00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_supplier_a4e31639039e90d24830bf6d8f3b118a4}{setState}}(\textcolor{keywordtype}{bool}\ newState);}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00074}00074\ \ \ \ \ std::string\ \mbox{\hyperlink{class_supplier_af6cec11ce45785b8b0f96eff5b8ecc8e}{toString}}();}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00075}00075\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00076}00076\ \ \ \ \ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id}\ =\ -\/1;\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00077}\mbox{\hyperlink{class_supplier_ad9c85668616b61f1b34778465005875c}{00077}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_supplier_ad9c85668616b61f1b34778465005875c}{name}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00078}\mbox{\hyperlink{class_supplier_a6babd76796787313137fdb22ecdba99c}{00078}}\ \ \ \ \ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{class_supplier_a6babd76796787313137fdb22ecdba99c}{location}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{char}[STRING\_SIZE];\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00079}\mbox{\hyperlink{class_supplier_ab578d064f95a4de6d93219ba59c74437}{00079}}\ \ \ \ \ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{class_supplier_ab578d064f95a4de6d93219ba59c74437}{firstProductAddress}}\ =\ -\/1;\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00080}\mbox{\hyperlink{class_supplier_a444ab6ab202c1557087631a632c23f4f}{00080}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_supplier_a444ab6ab202c1557087631a632c23f4f}{isRemoved}}\ =\ STATE\_ACTIVE;\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00081}00081\ \};}
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_supplier_8h_source_l00083}00083\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

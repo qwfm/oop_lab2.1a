@@ -1,0 +1,31 @@
+/** \page UML
+
+ 
+
+<h2>Class</h2>
+
+<p>
+  \image html class_diagram_dbsm.png
+</p>
+
+<h2>Activity</h2>
+
+<p>
+  \image html activity_diagram_dbsm.png
+</p>
+
+<h2>Sequence</h2>
+
+<p>
+  \image html sequence_diagram_dbsm.png
+</p>
+
+<h2>Use case</h2>
+
+<p>
+  \image html use_case_dbsm.png
+</p>
+
+ 
+
+*/

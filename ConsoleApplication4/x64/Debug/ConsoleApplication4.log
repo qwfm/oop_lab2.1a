@@ -1,6 +1,10 @@
 ﻿  Functions.cpp
-  main.cpp
+  ListNode.cpp
   Menu.cpp
+  Product.cpp
   Queue.cpp
+  Supplier.cpp
+  Utilities.cpp
+  main.cpp
   Generating Code...
   ConsoleApplication4.vcxproj -> C:\Users\chasl\OneDrive\Desktop\Лаби\ConsoleApplication4\x64\Debug\ConsoleApplication4.exe
